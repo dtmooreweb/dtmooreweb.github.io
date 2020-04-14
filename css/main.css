@@ -19,17 +19,11 @@ body {
 
 
 .jumbotron {
-   background: 
-    /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(0, 0, 0, 0.40), 
-      rgba(0, 0, 0, 0.40)
-    ),
-    /* bottom, image */
-    url('../img/banner.jpg');
-   background-size: 100%;
+   background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../img/banner.jpg');
+   background-size: cover;
    background-position: center;
    padding: 160px 0;
+   background-repeat: no-repeat;
 }
 
 .jumbotron .container {
@@ -60,10 +54,6 @@ body {
 	text-decoration:none;
    margin-top: 40px;
    letter-spacing: 3px;
-   -webkit-transition: background-color 0.5s ease-out;
-   -moz-transition: background-color 0.5s ease-out;
-   -o-transition: background-color 0.5s ease-out;
-   transition: background-color 0.5s ease-out;
    -webkit-transition: color 0.5s ease-out;
    -moz-transition: color 0.5s ease-out;
    -o-transition: color 0.5s ease-out;
@@ -72,7 +62,6 @@ body {
    -moz-transition: border 0.5s ease-out;
    -o-transition: border 0.5s ease-out;
    transition: border 0.5s ease-out;
-
 }
 .myButton:hover, .myButton:active {
    background-color:#ffffff;
@@ -83,12 +72,23 @@ body {
 	position:relative;
 	top:1px;
 }
-
-
 a, a:hover, a:active, a:visited, a:focus {
    text-decoration:none;
    color: #ffffff;
 }
 
+.skill-icon {
+   max-width: 75px;
+   max-height: 75px;
+   display: block;
+   margin: 0 auto;
+}
 
+.skill-box {
+   text-align: center;
+   margin-top: 30px;
+}
 
+.skill-box h3 {
+   margin-top: 10px;
+}
