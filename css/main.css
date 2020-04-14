@@ -1,22 +1,94 @@
 
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+/* Main CSS */
 
 
+body {
+   padding-top: 50px;
+   padding-bottom: 20px;
+}
+
+@font-face {
+   font-family: RobotoCondensedBold;
+   src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+   font-family: RobotoCondensed;
+   src: url(../fonts/RobotoCondensed-Regular.ttf);
+} 
 
 
+.jumbotron {
+   background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.40), 
+      rgba(0, 0, 0, 0.40)
+    ),
+    /* bottom, image */
+    url('../img/banner.jpg');
+   background-size: 100%;
+   background-position: center;
+   padding: 160px 0;
+}
+
+.jumbotron .container {
+   text-align: center;
+}
 
 
+.jumbotron .container h1 {
+   color: #FFF;
+   text-transform: uppercase;
+   font-family: "RobotoCondensed",sans-serif;
+   letter-spacing: 20px;
+   font-weight: 400;
+   font-size: 52px;
+}
+
+.myButton {
+   text-transform: uppercase;
+   font-family: "RobotoCondensed",sans-serif;
+	background-color: transparent;
+	border-radius:2px;
+	border:1.5px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:16px;
+	padding:16px 31px;
+	text-decoration:none;
+   margin-top: 40px;
+   letter-spacing: 3px;
+   -webkit-transition: background-color 0.5s ease-out;
+   -moz-transition: background-color 0.5s ease-out;
+   -o-transition: background-color 0.5s ease-out;
+   transition: background-color 0.5s ease-out;
+   -webkit-transition: color 0.5s ease-out;
+   -moz-transition: color 0.5s ease-out;
+   -o-transition: color 0.5s ease-out;
+   transition: color 0.5s ease-out;
+   -webkit-transition: border 0.5s ease-out;
+   -moz-transition: border 0.5s ease-out;
+   -o-transition: border 0.5s ease-out;
+   transition: border 0.5s ease-out;
+
+}
+.myButton:hover, .myButton:active {
+   background-color:#ffffff;
+   color:#000000;
+   border:1.5px solid #000000;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
 
-
-
-
-
-
-
+a, a:hover, a:active, a:visited, a:focus {
+   text-decoration:none;
+   color: #ffffff;
+}
 
 
 
