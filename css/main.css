@@ -23,6 +23,10 @@ html, body {
    src: url(../fonts/RobotoCondensed-Regular.ttf);
 } 
 
+h2 {
+   margin: 0px
+}
+
 
 .jumbotron {
    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../img/banner.jpg');
@@ -96,7 +100,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .skill-box {
    text-align: center;
-   margin-top: 30px;
+   margin-top: 70px;
 }
 
 .skill-box h3 {
@@ -157,12 +161,13 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .prof-section {
    background-color: #f0e2d6;
-   padding-bottom: 40px;
+   padding: 30px 15px;
+   height: 519px;
 }
 
 .resume-section {
    background-color: #396ED1;
-   padding: 0px 15px;
+   padding: 30px 15px;
    color: #ffffff;
    text-align: center;
 }
@@ -171,14 +176,18 @@ a, a:hover, a:active, a:visited, a:focus {
    max-width: 100%;
    max-height: 200px;
    display: block;
-   margin: 20px auto;
+   margin: 0px auto;
 }
 
 .github-section {
    background-color: #e2ecff;
-   padding: 0px 15px;
+   padding: 30px 15px;
    color: #000000;
    text-align: center;
+}
+
+.resume-section h2, .github-section h2 {
+   margin-top: 30px
 }
 
 .resume-button {
@@ -254,7 +263,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .row h2 {
    text-align: center;
-   padding: 20px 0px;
+   padding: 0px 0px;
 }
 
 .link-section {
@@ -298,12 +307,38 @@ section {
 
 /* Screen width specific styles */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 991px) {
+
+   .sidebar-icon {
+      display: none;
+   }
+   .resume-section h2, .github-section h2 {
+      margin-top: 0px
+   }
+   .prof-section {
+      height: unset;
+  }
+  .skill-box {
+      margin-top: 20px;
+   }  
+} 
+
+@media only screen and (max-width: 500px) {
    .jumbotron .container h1 {
       letter-spacing: 10px;
       font-size: 42px;
-  }
+   }
   .navbar {
       padding: 0px 0px;
+   }
+   .skill-box {
+      padding: 0px;
+   }
+   .skill-box h3 {
+      font-size: 15px;
+   }
+   .skill-icon {
+      max-width: 60px;
+      max-height: 60px;
    }
 } 
