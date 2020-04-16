@@ -19,7 +19,7 @@
     </head>
     <body>
     <nav class="navbar navbar-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container header-title">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Dillon Moore</a>
         </div>
@@ -30,14 +30,14 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Web Portfolio</h1>
-        <a href="#" class="myButton">More Moore</a>
+        <a href="#" class="jumbotron-button">More Moore</a>
       </div>
     </div>
-    <div class="container">
+    <div class="container content-block">
       <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-6">
-            <div class="row">
+      <div class="row display-flex">
+        <div class="col-md-6 prof-section slide-in">
+            <div class="row slide-in">
                 <h2>Proficiencies</h2>
                 <div class="col-xs-3 skill-box">
                     <img src="./img/html_icon.png" alt="HTML Icon" class="skill-icon">
@@ -56,7 +56,7 @@
                     <h3>jQuery</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="row slide-in">
                 <div class="col-xs-3 skill-box">
                     <img src="./img/wp_icon.png" alt="WordPress Icon" class="skill-icon">
                     <h3>WordPress</h3>
@@ -76,15 +76,23 @@
             </div>
         </div>
         <div class="col-md-6">
-            <div class="row">
+            <div class="row slide-in resume-section">
+              <div class="col-xs-6 slide-in">
                 <h2>Resume</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                <a class="resume-button" href="https://docs.google.com/document/d/1xwZE-Gj9BZF3AGX9QlxtTFRen9tziQdZjyRJEUioUfE/edit?usp=sharing" target=”_blank” role="button">View On Google Docs</a>
+              </div>
+              <div class="col-xs-6 slide-in">
+                <img src="./img/docs.png" alt="Google Docs logo" class="sidebar-icon">
+              </div>
             </div>
-            <div class="row">
-                <h2>Github Profile</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <div class="row slide-in github-section">
+              <div class="col-xs-6 slide-in">
+                <img src="./img/github.png" alt="Google Docs logo" class="sidebar-icon">
+              </div>
+              <div class="col-xs-6 slide-in">
+                <h2>GitHub Profile</h2>
+                <a class="github-button" href="https://github.com/dtmooreweb/" target=”_blank” role="button">View Profile</a>
+              </div>
             </div>
         </div>
       </div>

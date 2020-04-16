@@ -6,6 +6,12 @@
 body {
    padding-top: 0px;
    padding-bottom: 20px;
+   position: relative;
+   background-color: #f7f4f1;
+}
+
+html, body {
+   overflow-x: hidden;
 }
 
 @font-face {
@@ -22,12 +28,13 @@ body {
    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../img/banner.jpg');
    background-size: cover;
    background-position: center;
-   padding: 160px 0;
+   padding: 40vh 0;
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   margin-bottom: 0px;
 }
 
 .jumbotron .container {
@@ -41,10 +48,10 @@ body {
    font-family: "RobotoCondensed",sans-serif;
    letter-spacing: 20px;
    font-weight: 400;
-   font-size: 52px;
+   font-size: 72px;
 }
 
-.myButton {
+.jumbotron-button {
    text-transform: uppercase;
    font-family: "RobotoCondensed",sans-serif;
 	background-color: transparent;
@@ -63,14 +70,15 @@ body {
    -o-transition: color 0.5s ease;
    transition: color 0.5s ease;
    transition: background-color 0.5s ease 0s;
+   font-weight: bold;
 }
-.myButton:hover, .myButton:active {
-   background-color:#ffffff;
-   color:#000000;
+.jumbotron-button:hover, .jumbotron-button:active {
+   background-color: #ffffff;
+   color: #1b1d27;
    transition: background-color 0.5s ease 0s;
    
 }
-.myButton:active {
+.jumbotron-button:active {
 	position:relative;
 	top:1px;
 }
@@ -95,24 +103,207 @@ a, a:hover, a:active, a:visited, a:focus {
    margin-top: 10px;
 }
 
-
 .navbar {
    background-image: none;
    background-color: transparent;
+   padding: 10px 0px;
    transition: background-color 0.75s ease 0s;
-   position: fixed;
 }
 
 .navbar.solid {
-   background-color: #000;
+   background-color: #1b1d27;
    transition: background-color 0.75s ease 0s;
 }
 
 .navbar-brand {
    letter-spacing: 4px;
    font-weight: 400;
-   font-size: 22px;
+   font-size: 28px;
    color: #fff;
    text-transform: uppercase;
    font-family: "RobotoCondensed",sans-serif;
 }
+
+.header-title {
+   width: 94%;
+   margin-right: 3%;
+   margin-left: 3%;
+}
+
+.content-block {
+   width: 100%;
+   margin-right: 0;
+   margin-left: 0;
+   padding: 0px;
+}
+
+.row {
+   margin-right: 0px;
+   margin-left: 0px;
+}
+
+.col-md-6 {
+   padding: 0px;
+}
+
+.row.display-flex {
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .row.display-flex > [class*='col-'] {
+   display: flex;
+   flex-direction: column;
+ }
+
+.prof-section {
+   background-color: #f0e2d6;
+   padding-bottom: 40px;
+}
+
+.resume-section {
+   background-color: #396ED1;
+   padding: 0px 15px;
+   color: #ffffff;
+   text-align: center;
+}
+
+.sidebar-icon {
+   max-width: 100%;
+   max-height: 200px;
+   display: block;
+   margin: 20px auto;
+}
+
+.github-section {
+   background-color: #e2ecff;
+   padding: 0px 15px;
+   color: #000000;
+   text-align: center;
+}
+
+.resume-button {
+   text-transform: uppercase;
+   font-family: "RobotoCondensed",sans-serif;
+	background-color: transparent;
+	border-radius:1px;
+	border:2px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:16px;
+	padding:16px 31px;
+	text-decoration:none;
+   margin-top: 40px;
+   letter-spacing: 3px;
+   -webkit-transition: color 0.5s ease;
+   -moz-transition: color 0.5s ease;
+   -o-transition: color 0.5s ease;
+   transition: color 0.5s ease;
+   transition: background-color 0.5s ease 0s;
+   font-weight: bold;
+}
+.resume-button:hover, .jumbotron-button:active {
+   background-color: #ffffff;
+   color: #1b1d27;
+   transition: background-color 0.5s ease 0s;
+   
+}
+.resume-button:active {
+	position:relative;
+	top:1px;
+}
+
+.github-button {
+   text-transform: uppercase;
+   font-family: "RobotoCondensed",sans-serif;
+	background-color: transparent;
+	border-radius:1px;
+   border:2px solid #000000;
+   color: #000000;
+	display:inline-block;
+	cursor:pointer;
+	font-size:16px;
+	padding:16px 31px;
+	text-decoration:none;
+   margin-top: 40px;
+   letter-spacing: 3px;
+   -webkit-transition: color 0.5s ease;
+   -moz-transition: color 0.5s ease;
+   -o-transition: color 0.5s ease;
+   transition: color 0.5s ease;
+   transition: background-color 0.5s ease 0s;
+   font-weight: bold;
+}
+
+.github-button:active {
+   position:relative;
+   color: #ffffff;
+	top:1px;
+}
+
+.github-button:visited {
+   color: #000000;
+}
+
+.github-button:hover {
+   background-color: #000000;
+   color: #ffffff;
+   transition: background-color 0.5s ease 0s;
+   
+}
+
+.row h2 {
+   text-align: center;
+   padding: 20px 0px;
+}
+
+.link-section {
+   background-color: #e2e7ec;
+}
+
+
+
+
+section {
+  background: #eee;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+/* Animation CSS */
+ 
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 2s ease forwards;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+
+/* Screen width specific styles */
+
+@media only screen and (max-width: 600px) {
+   .jumbotron .container h1 {
+      letter-spacing: 10px;
+      font-size: 42px;
+  }
+  .navbar {
+      padding: 0px 0px;
+   }
+} 
