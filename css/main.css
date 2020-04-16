@@ -4,7 +4,7 @@
 
 
 body {
-   padding-top: 50px;
+   padding-top: 0px;
    padding-bottom: 20px;
 }
 
@@ -24,6 +24,10 @@ body {
    background-position: center;
    padding: 160px 0;
    background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .jumbotron .container {
@@ -44,8 +48,8 @@ body {
    text-transform: uppercase;
    font-family: "RobotoCondensed",sans-serif;
 	background-color: transparent;
-	border-radius:2px;
-	border:1.5px solid #ffffff;
+	border-radius:1px;
+	border:1px solid #ffffff;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -54,19 +58,17 @@ body {
 	text-decoration:none;
    margin-top: 40px;
    letter-spacing: 3px;
-   -webkit-transition: color 0.5s ease-out;
-   -moz-transition: color 0.5s ease-out;
-   -o-transition: color 0.5s ease-out;
-   transition: color 0.5s ease-out;
-   -webkit-transition: border 0.5s ease-out;
-   -moz-transition: border 0.5s ease-out;
-   -o-transition: border 0.5s ease-out;
-   transition: border 0.5s ease-out;
+   -webkit-transition: color 0.5s ease;
+   -moz-transition: color 0.5s ease;
+   -o-transition: color 0.5s ease;
+   transition: color 0.5s ease;
+   transition: background-color 0.5s ease 0s;
 }
 .myButton:hover, .myButton:active {
    background-color:#ffffff;
    color:#000000;
-   border:1.5px solid #000000;
+   transition: background-color 0.5s ease 0s;
+   
 }
 .myButton:active {
 	position:relative;
@@ -91,4 +93,26 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .skill-box h3 {
    margin-top: 10px;
+}
+
+
+.navbar {
+   background-image: none;
+   background-color: transparent;
+   transition: background-color 0.75s ease 0s;
+   position: fixed;
+}
+
+.navbar.solid {
+   background-color: #000;
+   transition: background-color 0.75s ease 0s;
+}
+
+.navbar-brand {
+   letter-spacing: 4px;
+   font-weight: 400;
+   font-size: 22px;
+   color: #fff;
+   text-transform: uppercase;
+   font-family: "RobotoCondensed",sans-serif;
 }
