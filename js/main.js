@@ -1,5 +1,6 @@
 $(document).ready(function() {
     // Initialize navbar visibility
+    
     if($(this).scrollTop() > 150) { 
         $('.navbar').addClass('solid');
     } else {
@@ -8,12 +9,38 @@ $(document).ready(function() {
     // Transition effect for navbar 
     $(window).scroll(function() {
       // checks if window is scrolled more than 150px, adds/removes solid class
-      if($(this).scrollTop() > 150) { 
+      if($(this).scrollTop() > 350) { 
           $('.navbar').addClass('solid');
       } else {
           $('.navbar').removeClass('solid');
       }
     });
+    
+    var win = $(window);
+  
+    var allMods = $(".slide-in");
+    
+    allMods.each(function(i, el) {
+      var el = $(el);
+      if (el.visible(true) || $(document).scrollTop() > 500) {
+        el.addClass("already-visible"); 
+      }
+    });
+    
+    win.scroll(function(event) {
+      
+      allMods.each(function(i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+          el.addClass("come-in"); 
+        } 
+      });
+      
+    });
+
+
+
+
 });
 
 (function($) {
@@ -40,24 +67,3 @@ $(document).ready(function() {
       
   })(jQuery);
   
-  var win = $(window);
-  
-  var allMods = $(".slide-in");
-  
-  allMods.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("already-visible"); 
-    } 
-  });
-  
-  win.scroll(function(event) {
-    
-    allMods.each(function(i, el) {
-      var el = $(el);
-      if (el.visible(true)) {
-        el.addClass("come-in"); 
-      } 
-    });
-    
-  });
