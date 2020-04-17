@@ -4,9 +4,6 @@
 
 
 body {
-   padding-top: 0px;
-   padding-bottom: 20px;
-   position: relative;
    background-color: #f7f4f1;
 }
 
@@ -362,11 +359,27 @@ p a, p a:visited {
    text-decoration: underline;
 }
 
+footer {
+   background-color: #1b1d27;
+   color: #ffffff;
+   padding: 20px 20px;
+   letter-spacing: 2px;
+   font-weight: 400;
+   font-size: 18px;
+   color: #fff;
+   font-family: "RobotoCondensed",sans-serif;
+   text-align: center;
+}
+
+footer p {
+   margin: 0px;
+}
+
 /* Animation CSS */
  
 .come-in {
   transform: translateY(150px);
-  animation: come-in 2s ease forwards;
+  animation: come-in 1.5s ease forwards;
 }
 .already-visible {
   transform: translateY(0);
