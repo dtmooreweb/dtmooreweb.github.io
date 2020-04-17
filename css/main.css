@@ -273,21 +273,94 @@ a, a:hover, a:active, a:visited, a:focus {
 
 
 
-section {
-  background: #eee;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  overflow: hidden;
+.site-image {
+   max-width: 100%;
+   -webkit-box-shadow: 0px 0px 10px 1px rgba(125,125,125,0.5);
+   -moz-box-shadow: 0px 0px 10px 1px rgba(125,125,125,0.5);
+   box-shadow: 0px 0px 10px 1px rgba(125,125,125,0.5);
+   position: relative;
+   top: 0;
+   transition: top ease 0.5s;
 }
 
+.site-image:hover {
+   top: -7px;
+}
 
+h2 {
+   text-align: center;
+}
 
+.site-desc {
+   border-top: 1px dotted #777;
+   padding-top: 10px;
+}
 
+.site-portfolio h2 {
+   margin: 40px 0px;
+}
+.site-portfolio h3 {
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 16px;
+   font-weight: bold;
+   color: #000000;
+}
+.site-software {
+   font-size: 12px;
+   color: #868686;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-family: "Roboto Condensed",sans-serif;
+}
+.site-desc {
+   min-height: 170px;
+}
 
+.site-button {
+   text-transform: uppercase;
+   font-family: "RobotoCondensed",sans-serif;
+    background-color: transparent;
+    border-radius:1px;
+   border:2px solid #000000;
+   color: #000000;
+    display:inline-block;
+    cursor:pointer;
+    font-size: 16px;
+    padding: 12px 24px;
+    text-decoration:none;
+   margin-top: 40px;
+   letter-spacing: 3px;
+   -webkit-transition: color 0.5s ease;
+   -moz-transition: color 0.5s ease;
+   -o-transition: color 0.5s ease;
+   transition: color 0.5s ease;
+   transition: background-color 0.5s ease 0s;
+   font-weight: bold;
+   margin-bottom: 40px;
+}
 
+.site-button:active {
+   position:relative;
+   color: #ffffff;
+    top:1px;
+}
 
+.site-button:visited {
+   color: #000000;
+}
 
+.site-button:hover {
+   background-color: #000000;
+   color: #ffffff;
+   transition: background-color 0.5s ease 0s;
+   
+}
+
+p a, p a:visited {
+   color: #000000;
+   text-decoration: underline;
+}
 
 /* Animation CSS */
  
@@ -307,6 +380,12 @@ section {
 
 /* Screen width specific styles */
 
+@media only screen and (max-width: 1200px) {
+   .site-desc {
+      min-height: 210px;
+   }
+}
+
 @media only screen and (max-width: 991px) {
 
    .sidebar-icon {
@@ -322,6 +401,12 @@ section {
       margin-top: 20px;
    }  
 } 
+
+@media only screen and (max-width: 768px) {
+   .site-desc {
+      min-height: unset;
+   }
+}
 
 @media only screen and (max-width: 500px) {
    .jumbotron .container h1 {
