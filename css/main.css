@@ -11,6 +11,10 @@ html, body {
    overflow-x: hidden;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 @font-face {
    font-family: RobotoCondensedBold;
    src: url(../fonts/RobotoCondensed-Bold.ttf);
@@ -24,6 +28,10 @@ h2 {
    margin: 0px
 }
 
+.main-content {
+   position: relative;
+   top: -60px;
+}
 
 .jumbotron {
    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../img/banner.jpg');
@@ -98,6 +106,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .skill-box {
    text-align: center;
    margin-top: 70px;
+   font-family: "RobotoCondensed",sans-serif;
 }
 
 .skill-box h3 {
@@ -356,6 +365,7 @@ h2 {
 
 p a, p a:visited {
    color: #000000;
+   font-weight: bold;
    text-decoration: underline;
 }
 
