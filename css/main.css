@@ -1,20 +1,14 @@
-
-
 /* Main CSS */
-
 
 body {
    background-color: #f7f4f1;
 }
-
 html, body {
    overflow-x: hidden;
 }
-
 html {
    scroll-behavior: smooth;
 }
-
 @font-face {
    font-family: RobotoCondensedBold;
    src: url(../fonts/RobotoCondensed-Bold.ttf);
@@ -23,16 +17,31 @@ html {
    font-family: RobotoCondensed;
    src: url(../fonts/RobotoCondensed-Regular.ttf);
 } 
-
 h2 {
    margin: 0px
 }
-
+#loading {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: fixed;
+   display: block;
+   opacity: 0.7;
+   background-color: #000000;
+   z-index: 99;
+   text-align: center;
+}
+#loading-image {
+   position: absolute;
+   top: 100px;
+   left: 240px;
+   z-index: 100;
+}
 .main-content {
    position: relative;
    top: -60px;
 }
-
 .jumbotron {
    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../img/banner.jpg');
    background-size: cover;
@@ -45,12 +54,9 @@ h2 {
    background-size: cover;
    margin-bottom: 0px;
 }
-
 .jumbotron .container {
    text-align: center;
 }
-
-
 .jumbotron .container h1 {
    color: #FFF;
    text-transform: uppercase;
@@ -59,7 +65,6 @@ h2 {
    font-weight: 400;
    font-size: 72px;
 }
-
 .jumbotron-button {
    text-transform: uppercase;
    font-family: "RobotoCondensed",sans-serif;
@@ -85,7 +90,6 @@ h2 {
    background-color: #ffffff;
    color: #1b1d27;
    transition: background-color 0.5s ease 0s;
-   
 }
 .jumbotron-button:active {
 	position:relative;
@@ -95,36 +99,30 @@ a, a:hover, a:active, a:visited, a:focus {
    text-decoration:none;
    color: #ffffff;
 }
-
 .skill-icon {
    max-width: 75px;
    max-height: 75px;
    display: block;
    margin: 0 auto;
 }
-
 .skill-box {
    text-align: center;
    margin-top: 70px;
    font-family: "RobotoCondensed",sans-serif;
 }
-
 .skill-box h3 {
    margin-top: 10px;
 }
-
 .navbar {
    background-image: none;
    background-color: transparent;
    padding: 10px 0px;
    transition: background-color 0.75s ease 0s;
 }
-
 .navbar.solid {
    background-color: #1b1d27;
    transition: background-color 0.75s ease 0s;
 }
-
 .navbar-brand {
    letter-spacing: 4px;
    font-weight: 400;
@@ -133,69 +131,58 @@ a, a:hover, a:active, a:visited, a:focus {
    text-transform: uppercase;
    font-family: "RobotoCondensed",sans-serif;
 }
-
 .header-title {
    width: 94%;
    margin-right: 3%;
    margin-left: 3%;
 }
-
 .content-block {
    width: 100%;
    margin-right: 0;
    margin-left: 0;
    padding: 0px;
 }
-
 .row {
    margin-right: 0px;
    margin-left: 0px;
 }
-
 .col-md-6 {
    padding: 0px;
 }
-
 .row.display-flex {
    display: flex;
    flex-wrap: wrap;
- }
- .row.display-flex > [class*='col-'] {
+}
+.row.display-flex > [class*='col-'] {
    display: flex;
    flex-direction: column;
- }
-
+}
 .prof-section {
    background-color: #f0e2d6;
    padding: 30px 15px;
    height: 519px;
 }
-
 .resume-section {
    background-color: #396ED1;
    padding: 30px 15px;
    color: #ffffff;
    text-align: center;
 }
-
 .sidebar-icon {
    max-width: 100%;
    max-height: 200px;
    display: block;
    margin: 0px auto;
 }
-
 .github-section {
    background-color: #e2ecff;
    padding: 30px 15px;
    color: #000000;
    text-align: center;
 }
-
 .resume-section h2, .github-section h2 {
    margin-top: 30px
 }
-
 .resume-button {
    text-transform: uppercase;
    font-family: "RobotoCondensed",sans-serif;
@@ -227,7 +214,6 @@ a, a:hover, a:active, a:visited, a:focus {
 	position:relative;
 	top:1px;
 }
-
 .github-button {
    text-transform: uppercase;
    font-family: "RobotoCondensed",sans-serif;
@@ -249,36 +235,27 @@ a, a:hover, a:active, a:visited, a:focus {
    transition: background-color 0.5s ease 0s;
    font-weight: bold;
 }
-
 .github-button:active {
    position:relative;
    color: #ffffff;
 	top:1px;
 }
-
 .github-button:visited {
    color: #000000;
 }
-
 .github-button:hover {
    background-color: #000000;
    color: #ffffff;
    transition: background-color 0.5s ease 0s;
    
 }
-
 .row h2 {
    text-align: center;
    padding: 0px 0px;
 }
-
 .link-section {
    background-color: #e2e7ec;
 }
-
-
-
-
 .site-image {
    max-width: 100%;
    -webkit-box-shadow: 0px 0px 10px 1px rgba(125,125,125,0.5);
@@ -288,20 +265,16 @@ a, a:hover, a:active, a:visited, a:focus {
    top: 0;
    transition: top ease 0.5s;
 }
-
 .site-image:hover {
    top: -7px;
 }
-
 h2 {
    text-align: center;
 }
-
 .site-desc {
    border-top: 1px dotted #777;
    padding-top: 10px;
 }
-
 .site-portfolio h2 {
    margin: 40px 0px;
 }
@@ -322,7 +295,6 @@ h2 {
 .site-desc {
    min-height: 170px;
 }
-
 .site-button {
    text-transform: uppercase;
    font-family: "RobotoCondensed",sans-serif;
@@ -345,30 +317,25 @@ h2 {
    font-weight: bold;
    margin-bottom: 40px;
 }
-
 .site-button:active {
    position:relative;
    color: #ffffff;
     top:1px;
 }
-
 .site-button:visited {
    color: #000000;
 }
-
 .site-button:hover {
    background-color: #000000;
    color: #ffffff;
    transition: background-color 0.5s ease 0s;
    
 }
-
 p a, p a:visited {
    color: #000000;
    font-weight: bold;
    text-decoration: underline;
 }
-
 footer {
    background-color: #1b1d27;
    color: #ffffff;
@@ -380,7 +347,6 @@ footer {
    font-family: "RobotoCondensed",sans-serif;
    text-align: center;
 }
-
 footer p {
    margin: 0px;
 }
@@ -395,11 +361,9 @@ footer p {
   transform: translateY(0);
   animation: none;
 }
-
 @keyframes come-in {
   to { transform: translateY(0); }
 }
-
 
 /* Screen width specific styles */
 
@@ -408,9 +372,7 @@ footer p {
       min-height: 210px;
    }
 }
-
 @media only screen and (max-width: 991px) {
-
    .sidebar-icon {
       display: none;
    }
@@ -424,13 +386,11 @@ footer p {
       margin-top: 20px;
    }  
 } 
-
 @media only screen and (max-width: 768px) {
    .site-desc {
       min-height: unset;
    }
 }
-
 @media only screen and (max-width: 500px) {
    .jumbotron .container h1 {
       letter-spacing: 10px;
@@ -449,4 +409,4 @@ footer p {
       max-width: 60px;
       max-height: 60px;
    }
-} 
+}
