@@ -9,7 +9,7 @@ $(document).ready(function() {
     }
     // Transition effect for navbar 
     $(window).scroll(function() {
-      if($(this).scrollTop() > 350) { 
+      if($(this).scrollTop() > 20) { 
           $('.navbar').addClass('solid');
       } else {
           $('.navbar').removeClass('solid');
