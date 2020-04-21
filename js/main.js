@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
     // Initialize navbar visibility
-    if($(this).scrollTop() > 150) { 
+    if($(this).scrollTop() > 20) { 
         $('.navbar').addClass('solid');
     } else {
         $('.navbar').removeClass('solid');
